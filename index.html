@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/-tdxRE0y2eHq8TgtDaO0pDJn05_ip--DZXhUxsa3Atci_qD7IJaj_SehYPUh53JqVhs" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <div class="bmiBox">
+        <h1><span>BMI</span> Calculator</h1>
+        <div class="heightBar">
+          <input
+            type="range"
+            min="1"
+            max="250"
+            value="50"
+            id="heightSlider"
+            name="heightSlider"
+            
+          />
+        </div>
+        <p class="heightP">
+          Height: <span id="heightDisplay">50</span>
+          <span class="cm">&nbsp;&nbsp;cm</span>
+        </p>
+
+        <div class="weightBar">
+          <input
+            type="range"
+            min="1"
+            max="150"
+            value="50"
+            id="weightSlider"
+            name="weightSlider"
+          />
+        </div>
+        <p class="weightP">
+          Weight: <span id="weightDisplay">50</span>
+          <span class="kg">&nbsp;&nbsp;kg</span>
+        </p>
+
+        <div class="btnContainer">
+            <button class="btn">Calculate</button>
+        </div>
+
+        <p class="bmiDisplay">Your BMI :</p>
+        <p class="healthClassification"></p>
+        
+
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
